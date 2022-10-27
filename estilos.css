@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: 'Poppins';
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 15px auto;
+
+}
+
+.contenedorPagina {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.contenedorPagina img {
+
+    width: 100%;
+    height: 130vh;
+    position: fixed;
+    z-index: -1000;
+
+}
+
+.contenedorSecundario {
+    width: 100%;
+    position: absolute;
+    top: 10px;
+}
+
+.contenedorTitulo {
+    display: flex;
+    align-items: center;
+}
+
+.contenedorSecundario h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.contenedorSecundario nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+
+.contenedorOpcionesPrincipales {
+    width: 430px;
+    margin-left: 100px;
+}
+
+.contenedorOpcionesPrincipales ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedorOpcionesPrincipales ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.contenedorOpcionesPrincipales ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.contenedorOpcionesPrincipales ul li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+.contenedorOpcionesSecundarias {
+    width: 310px;
+}
+
+.menuSesion {
+    display: flex;
+    justify-content: space-around;
+    width: 75px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 11px 14px;
+    border-radius: 40%;
+
+}
+
+.menuSesion a i {
+    color: #000;
+
+}
+
+.contenedorOpcionesSecundarias ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedorOpcionesBajoNav {
+    margin-top: 40px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+}
+
+.listaCategorias {
+    list-style: none;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.listaCategorias li a {
+    text-decoration: none;
+    color: #eee;
+    font-family: 'Messina Sans';
+}
+
+
+.listaCategorias li a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #fff;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.listaCategorias li a:hover:after {
+    transform: scaleX(1);
+}
+
+.listaCategorias li a:after {
+    transform-origin: 50% 50%;
+}
+
+
+
+.opcionesInconos {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.categoriaFlecha a {
+    padding: 6px;
+    background-color: #eee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: #000 !important;
+
+}
+
+
+.categoriaFiltrar {
+    padding: 12px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.categoriaFiltrar i {
+    color: #000;
+}
+
+.filtro {
+    color: #000 !important;
+
+}
+
+.contenedorHeader {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contenedorBuscador {
+    width: 800px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #fff;
+    padding: 8px;
+
+}
+
+.contenedorSlogan {
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.contenedorSlogan a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 0px 3px 10px black;
+}
+
+.contenedorSlogan button {
+    margin-top: 80px;
+    padding: 15px;
+    color: #FF385C;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.contenedorPagina,
+body {
+    scrollbar-width: 1px;
+}
+
+
+.formBusqueda {
+    width: 98%;
+    height: 100%;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    align-items: center;
+}
+
+.formBusqueda div {
+    display: flex;
+    flex-direction: column;
+    width: 105px !important;
+    border-right: 1px solid black;
+    width: 80px;
+    gap: 6px;
+
+}
+
+
+.formBusqueda div input {
+    width: 95px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.formBusqueda div input::placeholder {
+    color: #ccc;
+}
+
+.contenedorDestino {
+    width: 120px !important;
+}
+
+.contenedorDestino input {
+    width: 90px !important;
+}
+
+
+.botonBuscarHostal {
+    border: none !important;
+    margin-right: 40px;
+}
+
+.contenedorHuespedes {
+    text-align: center;
+    border: none !important;
+}
+
+
+.botonBuscarHostal input {
+    width: 150% !important;
+    height: 55px !important;
+    padding: 15px;
+    border-radius: 45px;
+    background-color: #b91005;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
